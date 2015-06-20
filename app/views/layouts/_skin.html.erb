@@ -1,0 +1,409 @@
+
+<!--settings-->
+<!-- the modal is placed outside the navbar to allow it to appear above everything else -->
+<div id="settings" class="modal">
+  <div class="modal-content">
+    <h4>Settings</h4>
+    <form id="settings-form" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="mdi-action-account-circle prefix"></i>
+          <input placeholder="Mohamed" id="first_name" type="text" class="validate">
+          <label for="first_name" class="active">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Abo El Soud" id="last_name" type="text" class="validate">
+          <label for="last_name" class="active">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="mdi-communication-phone prefix"></i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+      </div>
+      <div class="row" id="password-input">
+        <div id="shown" class="input-field col s12">
+          <input id="password" placeholder="(unchanged)" type="password" class="validate">
+          <label for="password" class="active">Password</label>
+        </div>
+        <div id="hidden" class="input-field col s12 hide">
+          <input id="password" type="password" class="validate">
+          <label for="password" class="active">Enter the password again</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" placeholder="mohamed.aaes@gmail.com" type="email" class="validate">
+          <label for="email" class="active">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" id="save-button" class=" modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+    <a href="#!" id="cancel-button" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+  </div>
+</div>
+<!--end settings-->
+<!--navbar-->
+<div class="navbar-fixed">
+  <nav class="row teal accent-4">
+    <div class="nav-wrapper">
+      <!--collapse-->
+      <a href="#" data-activates="mobile-demo" class="col s1 button-collapse hide-on-med-and-up">
+        <i class="mdi-navigation-menu"></i></a>
+      <!--end collapse-->
+      <!-- right nav desktop -->
+      <ul id="nav-desktop" 
+          class="right hide-on-med-and-down">
+        <li><a data-activates="search" href="sass.html" class="button-search">
+          <label for="search">
+            <i class="mdi-action-search left"></i> Search
+          </label>
+          </a>
+        </li>
+        <li><a href="components.html">
+          <i class="mdi-content-send left"></i> Sent</a>
+        </li>
+        <li><a href="javascript.html">
+          <i class="mdi-action-report-problem left"></i> Junk</a>
+        </li>
+        <li><a href="mobile.html">
+          <i class="mdi-action-delete left"></i> Trash</a>
+        </li>
+        <li><a data-activates="options" href="#" class="button-options">
+          <i class="mdi-navigation-more-horiz left"></i> Options</a>
+        </li>
+      </ul>
+      <!-- end right nav desktop -->
+      <!--logo-->
+      <div class="col l6 s4">
+        <a href="#" class="brand-logo">Sent</a>
+      </div>
+      <!--end logo-->
+      <!--right nav tablet-->
+      <ul id="nav-tablet" class="right hide-on-large-only hide-on-small-only">
+        <li><a data-activates="search" href="sass.html" class="button-search">
+          <label for="search">
+            <i class="mdi-action-search white-text"></i>
+          </label>
+          </a>
+        </li>
+        <li><a href="#">
+          <i class="mdi-content-mail"></i></a>
+        </li>
+        <li><a href="components.html">
+          <i class="mdi-content-send"></i></a>
+        </li>
+        <li><a href="javascript.html">
+          <i class="mdi-action-report-problem"></i></a>
+        </li>
+        <li><a href="mobile.html">
+          <i class="mdi-action-delete"></i></a>
+        </li>
+        <li><a data-activates="options" href="mobile.html" class="button-options">
+          <i class="mdi-navigation-more-horiz"></i></a>
+        </li>
+      </ul>
+      <!--end right nav tablet-->
+      <!--options window-->
+      <div id="options" class="card">
+        <div class="card-image">
+          <img class="" src="https://s-media-cache-ak0.pinimg.com/originals/99/a2/65/99a265b17595caaaa2c382e168a5e32b.jpg">
+           <!-- the overlay adds a tint to the photo -->
+            <div class="overlay"></div>
+          <span class="card-title white-text">
+            <h5>Mohamed A.</h5>
+          </span>
+        </div>
+        <div class="card-content">
+          <b>Mohamed Abo El Soud</b>
+          <p>mohamed.aaes@gmail.com</p>
+        </div>
+        <div class="card-action">
+          <!-- the href attribute matches the button with the model -->
+          <a class="waves-effect waves-dark red btn-flat button-settings"  
+             href="#settings">settings</a>
+          <a  class="waves-effect waves-dark red btn-flat" href='#'>signout</a>
+        </div>
+      </div>
+      <!--end options window-->
+      <!--side nav-->
+      <ul class="side-nav" id="mobile-demo">
+        <div class="card">
+          <div class="card-image">
+            <img class="" src="https://s-media-cache-ak0.pinimg.com/originals/99/a2/65/99a265b17595caaaa2c382e168a5e32b.jpg">
+           <!-- the overlay adds a tint to the photo -->
+            <div class="overlay"></div>
+            <span class="card-title">
+              <h5 class="white-text">Mohamed A.</h5>
+            </span>
+          </div>
+          <div class="card-content hide">
+            <!-- blank for now... -->
+          </div>
+          <div class="card-action hide">
+            <a href="#">This is a link</a>
+            <a href='#'>This is a link</a>
+          </div>
+        </div>
+        <li><a href="sass.html">
+          <i class="mdi-content-mail right"></i>Inbox</a>
+        </li>
+        <li><a href="components.html">
+          <i class="mdi-content-send right"></i>Sent</a>
+        </li>
+        <li><a href="javascript.html">
+          <i class="mdi-action-report-problem right"></i>Junk</a>
+        </li>
+        <li><a href="mobile.html">
+          <i class="mdi-action-delete right"></i>Trash</a>
+        </li>
+        <div class="divider"></div>
+        <div class="section grey-text text-darken-2">
+          <h5>Account</h5>
+        </div>
+        <!-- the href attribute matches the button with the model -->
+        <li><a href="#settings" class="button-settings">
+          <i class="mdi-action-settings right"></i>Settings</a>
+        </li>
+        <li>
+          <a href='#'>Signout</a>
+        </li>
+      </ul>
+      <!--side nav end-->
+      <!--search-->
+      <form id="search-form" class="col s12">
+        <div class="input-field">
+          <input id="search" type="search">
+          <button type="reset">
+            <i class="mdi-navigation-close"></i></button>
+        </div>
+      </form>
+      <!--search end-->
+      <!--search icon-->
+      <a href="#" data-activates="search" class="col s1 right button-search hide-on-med-and-up">
+        <label for="search">
+          <i class="mdi-action-search white-text"></i></label></a>
+      <!--search icon end-->
+    </div>
+  </nav>
+</div>
+<!--end navbar-->
+<!--content-->
+<div class="grey lighten-2">
+  <!--messages-->
+  <div class="container">
+    <ul class="collection">
+      <li class="collection-item grey lighten-2 grey-text text-darken-1">
+        <b>Today</b>
+      </li>
+      <!--Today-->
+      <div class="card">
+        <!-- email-1 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://www.skincare-centre.com/wp-content/uploads/2012/04/Male-Face-3.jpg" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">Announcing new employee</b>
+            <p class="grey-text">John Stamos</p>
+            <p class="grey-text text-darken-3 truncate">Referring our previous conversation about my position at the company, I have decided to inform you that I resign as your CEO. It was not an easy decision to make, but I believe that is the right option for me and my future career plans... </p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-1 -->
+        <!-- email-2 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://blog.powerlinx.com/wp-content/uploads/2014/03/shaking-hands-picture.jpg" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">Company Event</b>
+            <p class="grey-text">Kyle Bens</p>
+            <p class="grey-text text-darken-3 truncate">Thank you very much for the experience that you have given to me, especially for the work on the company’s project Construction... </p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-2 -->
+        <!-- email-3 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://www.fabulousfaces.com/lib/upload/lrp2210.jpg" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">We've Moved!</b>
+            <p class="grey-text">Mark Evans</p>
+            <p class="grey-text text-darken-3 truncate">Referring our previous conversation about my position at the company, I have decided to inform you that I resign as your CEO. It was not an easy decision to make, but I believe that is the right option for me and my future career plans...</p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-3 -->
+      </div>
+      <!--end Today-->
+      <li class="collection-item grey lighten-2 grey-text text-darken-1">
+        <b>Yesterday</b></li>
+      <!--Yesterday-->
+      <div class="card">
+        <!-- email-1 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://www.ethos3.com/wp-content/uploads/2014/11/business-stock-photo-600x400.jpg" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">Announcing new employee</b>
+            <p class="grey-text">John Stamos</p>
+            <p class="grey-text text-darken-3 truncate">Referring our previous conversation about my position at the company, I have decided to inform you that I resign as your CEO. It was not an easy decision to make, but I believe that is the right option for me and my future career plans... </p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-1 -->
+        <!-- email-2 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://img2.stockfresh.com/files/k/kurhan/m/20/456041_43914715.jpg" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">Company Event</b>
+            <p class="grey-text">Kyle Bens</p>
+            <p class="grey-text text-darken-3 truncate">Thank you very much for the experience that you have given to me, especially for the work on the company’s project Construction... </p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-2 -->
+        <!-- email-3 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://www.freestockgraphics.com/wp-content/uploads/ngg_featured/bmgrh.jpg" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">We've Moved!</b>
+            <p class="grey-text">Mark Evans</p>
+            <p class="grey-text text-darken-3 truncate">Referring our previous conversation about my position at the company, I have decided to inform you that I resign as your CEO. It was not an easy decision to make, but I believe that is the right option for me and my future career plans...</p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-3 -->
+      </div>
+      <!--end Yesterday-->
+      <li class="collection-item grey lighten-2 grey-text text-darken-1">
+        <b>May</b></li>
+      <!--May-->
+      <div class="card">
+        <!-- email-1 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://automotive.stanford.edu/images/Profile_Siciliano.jpg" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">Announcing new employee</b>
+            <p class="grey-text">John Stamos</p>
+            <p class="grey-text text-darken-3 truncate">Referring our previous conversation about my position at the company, I have decided to inform you that I resign as your CEO. It was not an easy decision to make, but I believe that is the right option for me and my future career plans... </p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-1 -->
+        <!-- email-2 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://www.trbimg.com/img-5159d523/turbine/0404-business-profile-jpg-20130401/600/480x600" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">Company Event</b>
+            <p class="grey-text">Kyle Bens</p>
+            <p class="grey-text text-darken-3 truncate">Thank you very much for the experience that you have given to me, especially for the work on the company’s project Construction... </p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-2 -->
+        <!-- email-3 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://www.corporateheadshotslondon.com/wp-content/uploads/2013/03/Business-profile-photo.jpg" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">We've Moved!</b>
+            <p class="grey-text">Mark Evans</p>
+            <p class="grey-text text-darken-3 truncate">Referring our previous conversation about my position at the company, I have decided to inform you that I resign as your CEO. It was not an easy decision to make, but I believe that is the right option for me and my future career plans...</p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-3 -->
+      </div>
+      <!--end May-->
+      <li class="collection-item grey lighten-2 grey-text text-darken-1">
+        <b>June</b></li>
+      <!--June-->
+      <div class="card">
+        <!-- email-1 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://www.trbimg.com/img-51880e6a/turbine/0509-fisher-jpg-20130506/600/400x600" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">Announcing new employee</b>
+            <p class="grey-text">John Stamos</p>
+            <p class="grey-text text-darken-3 truncate">Referring our previous conversation about my position at the company, I have decided to inform you that I resign as your CEO. It was not an easy decision to make, but I believe that is the right option for me and my future career plans... </p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-1 -->
+        <!-- email-2 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://www.trbimg.com/img-5191394e/turbine/0516-business-profile-jpg-20130513/480/448x480" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">Company Event</b>
+            <p class="grey-text">Kyle Bens</p>
+            <p class="grey-text text-darken-3 truncate">Thank you very much for the experience that you have given to me, especially for the work on the company’s project Construction... </p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-2 -->
+        <!-- email-3 -->
+        <div class="card-wrapper">
+          <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <i class="mdi-action-grade"></i>
+          </a> 
+          <a href="#!" class="collection-item avatar">
+            <img src="http://myfirestorm.com/sites/default/files/imagecache/profile_main/pictures/picture-136.jpg" class="circle responsive-img">
+            <!--email content-->
+            <b class="title">We've Moved!</b>
+            <p class="grey-text">Mark Evans</p>
+            <p class="grey-text text-darken-3 truncate">Referring our previous conversation about my position at the company, I have decided to inform you that I resign as your CEO. It was not an easy decision to make, but I believe that is the right option for me and my future career plans...</p>
+            <!--end email content-->
+          </a>
+        </div>
+        <!-- end email-3 -->
+      </div>
+      <!--end June-->
+    </ul>
+  </div>
+  <!--messages end-->
+</div>
+<!--content end-->

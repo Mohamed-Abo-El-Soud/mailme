@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#to deploy on the server enter:
+
+rails s -p $PORT -b $IP

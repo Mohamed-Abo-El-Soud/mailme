@@ -1,5 +1,24 @@
 #!/bin/bash
 
-#to deploy on the server enter:
+# if the $PORT variable exists
+if [[ ! $PORT ]]; then
+
+  #PORT is not defined, setting it now
+  PORT=3000
+  
+  
+  # PORT is already defined, using that instead
+  # continue the program in server file...
+#else
+  # continue the program in server file...
+fi
+
+# echo $PORT
+
+#PORT=3000
+
+IP=0.0.0.0
+
+#deploying on the server
 
 rails s -p $PORT -b $IP

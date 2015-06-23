@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
   
-  get 'help' => 'static_pages#help'
+  get 'help' => 'static_pages#he lp'
   
   get 'about' => 'static_pages#about'
   

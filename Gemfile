@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.2'
 # password hashing
 gem 'bcrypt', '3.1.7'
+# console formatting
+gem 'hirb'
 
 gem 'bootstrap-sass'
 # Use sqlite3 as the database for Active Record

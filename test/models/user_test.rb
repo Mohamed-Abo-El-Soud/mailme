@@ -27,14 +27,17 @@ class UserTest < ActiveSupport::TestCase
   #   @user.password = @user.password_confirmation = "a" * 5
   #   assert_not @user.valid?
   # end 
-  test "user should be invalid" do
-      # userValid = @user.save
-      assert_not @user.valid?
-    end
-  test "user creation should pause and allow errors to show" do
-     @user.save
-      assert true #@user.valid?
-    end
+  # test "user should be invalid" do
+  #     # userValid = @user.save
+  #     assert_not @user.valid?
+  #   end
+  # test "user creation should pause and allow errors to show" do
+  #   @user.save
+  #     assert true #@user.valid?
+  #   end
+  test "authenticated? should return false for a user with nil digest" do
+    assert_not @user.authenticated?(:remember, '')
+  end
     
 end
 

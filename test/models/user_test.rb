@@ -5,12 +5,11 @@ class UserTest < ActiveSupport::TestCase
   def setup
     # @user = User.new(name: "Example User", email: "user@example.com",
     #                 password: "foobar", password_confirmation: "foobar")
-    
-    @user = User.new(name: "Example User", email: "user@example",
-                    password: "foobar", password_confirmation: "foobar")
-    example_params = {"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}
-    second_params = { name: "", email: "",
-                    password: "", password_confirmation: ""}
+    @user = User.new(name: "Example User", email: "user@example.com",
+                     password: "foobar", password_confirmation: "foobar")
+    # example_params = {"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}
+    # second_params = { name: "", email: "",
+    #                 password: "", password_confirmation: ""}
   end
   # test "email addresses should be unique" do
   #   duplicate_user = @user.dup
@@ -35,10 +34,16 @@ class UserTest < ActiveSupport::TestCase
   #   @user.save
   #     assert true #@user.valid?
   #   end
-  test "authenticated? should return false for a user with nil digest" do
-    assert_not @user.authenticated?(:remember, '')
+  # test "authenticated? should return false for a user with nil digest" do
+  #   assert_not @user.authenticated?(:remember, '')
+  # end
+  
+  test "associated microposts should be destroyed" do
+    @user.save
+    @user.microposts.create!(content: "Lorem ipsum")
+    assert_difference 'Micropost.count', -1 do
+      @user.destroy
+    end
   end
     
 end
-
-{name: "", email: "", password: "", password_confirmation: ""}

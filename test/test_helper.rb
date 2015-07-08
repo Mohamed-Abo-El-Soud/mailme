@@ -9,6 +9,10 @@ class ActiveSupport::TestCase
   def is_logged_in?
     !session[:user_id].nil?
   end
+  
+  def logger
+    Rails.logger
+  end
 
   # Logs in a test user.
   def log_in_as(user, options = {})
